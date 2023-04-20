@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
 
 :root {
-  --h1-size: 50px;
+  --h1-size: 2.5rem;
   --h1-font: "Poppins", sans-serif;
 }
 
 .intro-container {
-  max-width: 800px;
-  min-width: 600px;
+  /* max-width: 800px; */
+  /* min-width: 600px; */
   display: flex;
   flex-direction: column;
   margin: 20px;
