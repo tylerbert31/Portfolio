@@ -10,7 +10,7 @@ function Intro() {
         <h2>Hi, my name is</h2>
         <h1>Tyler Bert Baring</h1>
         <div className="text-effect">
-          <ReactTypingEffect text={["A junior web developer."]} />
+          <ReactTypingEffect text={["A junior web developer."]} speed={"100"} />
         </div>
 
         <p>
