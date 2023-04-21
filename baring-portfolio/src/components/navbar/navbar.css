@@ -70,10 +70,3 @@ h2 {
   margin: 0 0 4px;
   cursor: default;
 }
-
-section {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 100px 60px;
-}
