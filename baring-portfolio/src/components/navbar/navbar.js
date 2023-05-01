@@ -1,29 +1,29 @@
-import "./navbar.css"
-import logo from "../../logo.svg"
-import { useEffect, useRef, useState } from "react"
+import "./navbar.css";
+import logo from "../../logo.svg";
+import { useEffect, useRef, useState } from "react";
 
 export const Navbar = () => {
-  const lastScrollTop = useRef(0)
+  const lastScrollTop = useRef(0);
 
-  const [isNavbarVisible, setIsNavbarVisible] = useState(true)
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
 
   useEffect(() => {
     window.addEventListener(
       "scroll",
       () => {
-        var { pageYOffset } = window
+        var { pageYOffset } = window;
         if (pageYOffset > lastScrollTop.current) {
           // downward scroll
-          setIsNavbarVisible(false)
+          setIsNavbarVisible(false);
         } else if (pageYOffset < lastScrollTop.current) {
           // upward scroll
-          setIsNavbarVisible(true)
+          setIsNavbarVisible(true);
         } // else was horizontal scroll
-        lastScrollTop.current = pageYOffset <= 0 ? 0 : pageYOffset
+        lastScrollTop.current = pageYOffset <= 0 ? 0 : pageYOffset;
       },
       { passive: true }
-    )
-  }, [])
+    );
+  }, []);
 
   return (
     <>
@@ -36,5 +36,5 @@ export const Navbar = () => {
         </div>
       </nav>
     </>
-  )
-}
+  );
+};
